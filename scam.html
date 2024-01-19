@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Scam Events</title>
+    <title>Scam Alert</title>
   </head>
   <body>
-    <button type="submit">
-    <img src="https://miro.medium.com/max/1400/1*mdcu3Ku9r44HMtraHUqu5g.jpeg"
-    alt="" onclick="Click()" ></button>
+    <img
+      id="myImage"
+      src="https://miro.medium.com/max/1400/1*mdcu3Ku9r44HMtraHUqu5g.jpeg"
+      alt=""
+    />
+    <script>
+      document.getElementById('myImage').addEventListener('click', function() {
+        var userChoice = confirm("The website you are going to visit may harm your computer. Do you still want to redirect?");
+        if (userChoice) {
+          
+          alert("Redirecting to the website...");
+        } else {
+          alert("You choose not to redirect.");
+        }
+      });
+    </script>
   </body>
 </html>
-<script>
-   
-    }
-    
-   
-</script>
